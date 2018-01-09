@@ -47,7 +47,7 @@ public class ExtractorCase extends InstrumentationTestCase {
     private void extractorTestDashManifest(final String youtubeLink)
             throws Throwable {
         final CountDownLatch signal = new CountDownLatch(1);
-        YouTubeExtractor.LOGGING = true;
+        YouTubeExtractor.Companion.setLOGGING(true);
 
         testUrl = null;
 
@@ -95,7 +95,7 @@ public class ExtractorCase extends InstrumentationTestCase {
     private void extractorTest(final String youtubeLink, final VideoMeta expMeta)
             throws Throwable {
         final CountDownLatch signal = new CountDownLatch(1);
-        YouTubeExtractor.LOGGING = true;
+        YouTubeExtractor.Companion.setLOGGING(true);
 
         testUrl = null;
 

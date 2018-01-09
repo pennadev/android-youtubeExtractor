@@ -26,5 +26,5 @@ repositories {
 dependencies {
     compile project(':youtubeExtractor')
     compile 'org.aspectj:aspectjrt:1.8.8'
-    compile 'com.googlecode.mp4parser:isoparser:1.1.17'
+    compile 'com.googlecode.mp4parser:isoparser:1.1.21'
 }

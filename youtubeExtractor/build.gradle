@@ -1,8 +1,9 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '25.0.3'
 
     defaultConfig {
         minSdkVersion 14
@@ -16,4 +17,8 @@ dependencies {
     compile('com.github.evgenyneu:js-evaluator-for-android:v1.0.7') {
         exclude module: 'appcompat-v7'
     }
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
